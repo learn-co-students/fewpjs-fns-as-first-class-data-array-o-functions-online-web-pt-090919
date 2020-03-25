@@ -7,7 +7,7 @@
 ## Introduction
 
 Since functions in JavaScript are "first-class" objects, it means they can be
-treated like any other data type in JavaScript (`Number`, `String`, et al.).  A
+treated like any other data type in JavaScript (`Number`, `String`, et al.). A
 fun way to experience this truth is to load up an `Array` of `Functions` and
 then call each `Function`.
 
@@ -19,12 +19,14 @@ activities we take in caring for Byron the Poodle.
 When this program runs, it should print out:
 
 ```
+
 console.log("Wake Byron the poodle");
 console.log("Leash Byron the poodle");
 console.log("Walk to the park with Byron the poodle");
 console.log("Throw the frisbee for Byron the poodle");
 console.log("Walk home with Byron the poodle");
 console.log("Unleash Byron the poodle");
+
 ```
 
 Start by creating a function for every activity that you see listed above:
@@ -50,18 +52,19 @@ function wakeDog(dogName, dogBreed) {
 ```
 
 **Additionally**: Each function should return the string that it creates. That
-is, we should create a `String`, log it to the console (using `console.log()`), and return that `String`.
+is, we should create a `String`, log it to the console (using `console.log()`),
+and return that `String`.
 
 ## Create the Array o' Functions
 
 Continue writing _"generalized"_ functions for
 
-* `wakeDog`
-* `leashDog`
-* `walkToPark`
-* `throwFrisbee`
-* `walkHome`
-* `unleashDog`
+- `wakeDog`
+- `leashDog`
+- `walkToPark`
+- `throwFrisbee`
+- `walkHome`
+- `unleashDog`
 
 Each function's implementation will be a generalized invocation of
 `console.log()`.
@@ -76,24 +79,24 @@ variable will be an `Array` all of the functions we've just defined.
 Lastly, create the function called `exerciseDog` that will take in two
 arguments:
 
-* `dogName`
-* `dogBreed`
+- `dogName`
+- `dogBreed`
 
 The function's implementation should
 
-* Iterate over the `routine` `Array`
-* Call each function in the array and
-* pass the `dogName` and `dogBreed` received by `exerciseDog()` to the function as they are _called_
-* capture the result of each function's call
-* return an `Array` of all those functions' return values
+- Iterate over the `routine` `Array`
+- Call each function in the array and
+- pass the `dogName` and `dogBreed` received by `exerciseDog()` to the function
+  as they are _called_
+- capture the result of each function's call
+- return an `Array` of all those functions' return values
 
 ## Conclusion
 
-This lab demonstrates the power of `Function`s as first-class data. We can
-stack them up in `Arrays` or assign them inside of `Objects` or save them to
+This lab demonstrates the power of `Function`s as first-class data. We can stack
+them up in `Arrays` or assign them inside of `Objects` or save them to
 variables, or iterate over them. Instead of _merely_ having `Array`s of
 `String`s and other familiar items, we can stuff them with _work_. And that's
 nothing short of amazing!
 
 [First Class Functions MDN](https://developer.mozilla.org/en-US/docs/Glossary/First-class_Function)
-

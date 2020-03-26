@@ -34,12 +34,13 @@ let routine = [
 // function that runs the array o' functions
 // calls into the independent functions
 function exerciseDog(dogName, dogBreed) {
-  // for (let i = 0; i < routine.length; i++) {
-  //   routine[i] = routine[i](dogName, dogBreed);
-  // };
-  // return routine
+  for (let i = 0; i < routine.length; i++) {
+    routine[i] = routine[i](dogName, dogBreed);
+  };
+  return routine  
   
-  return routine.map(function(fn) {
-    return fn(dogName, dogBreed);
-  });
+  // Alternate solution:
+  // return routine.map(function(fn) {
+  //   return fn(dogName, dogBreed);
+  // });
 }

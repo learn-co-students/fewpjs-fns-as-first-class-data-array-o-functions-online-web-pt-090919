@@ -40,8 +40,8 @@ let routine = [wakeDog, leashDog, walkToPark, throwFrisbee, walkHome, unleashDog
 
 function exerciseDog(dogName, dogBreed) {
     let events = [];
-    routine.forEach(call => { 
-        events.push(call(dogName, dogBreed));
+    routine.forEach(stage => { 
+        events.push(stage(dogName, dogBreed));
     })
     return events;
 }
